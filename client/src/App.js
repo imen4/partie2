@@ -9,6 +9,7 @@ import AppNavbar from './components/AppNavbar';
 import Dashboard from './components/Dashboard';
 import PrivateRoute from './components/PrivateRoute';
 import { getAuthUser } from './JS/actions/authActions';
+import Home from './components/Home';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
     <div>
       <AppNavbar />
       <Routes>
-        <Route path='/' element={<h1>Welcome To Home Page</h1>} />
+        <Route path='/' element={<Home/>} />
         
           <Route path='/dashboard' element={<PrivateRoute><Dashboard /> </PrivateRoute>} />
         

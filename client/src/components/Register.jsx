@@ -37,11 +37,11 @@ const Register = () => {
           </Modal.Header>
           <Modal.Body>
           <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="formBasicFname">
         <Form.Label>First Name</Form.Label>
         <Form.Control type="text" placeholder="Enter First Name" name="name" value={name} onChange={(e)=>setName(e.target.value)} />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formLname">
         <Form.Label>Last Name</Form.Label>
         <Form.Control type="text" placeholder="Enter Last Name" name="lastName" value={lastName} onChange={(e)=>setLastName(e.target.value)} />
       </Form.Group>

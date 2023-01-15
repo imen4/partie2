@@ -19,10 +19,21 @@ const AppNavbar = () => {
   return (
     <Navbar bg="primary" variant="dark">
     <Container>
-      <Navbar.Brand>Auth App</Navbar.Brand>
+      <Navbar.Brand>
+      <img
+              alt=""
+              src="../logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              style={{margin:"0 10px"}}
+            />
+        Store App
+        </Navbar.Brand>
+
       <Nav className="me-auto">
-      <Nav.Link><Link to="/" style={{color:"white",textDecoration:"none"}}> Home </Link></Nav.Link>
-      {!isAuth ? (<></>):( <Nav.Link><Link style={{color:"white",textDecoration:"none"}} to="/dashboard">Dashboard </Link></Nav.Link>)}
+      <Link to="/" style={{color:"white",textDecoration:"none",margin:"0 12px"}}> Home </Link>
+      {!isAuth ? (<></>):( <Link style={{color:"white",textDecoration:"none"}} to="/dashboard">Dashboard </Link>)}
      
       </Nav>
     </Container>
