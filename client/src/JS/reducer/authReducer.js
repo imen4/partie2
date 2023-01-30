@@ -5,6 +5,7 @@ const initialState = {
     user:null,
     isAuth:false,
     isLoading:true
+  
 }
 
 const authReducer = (state = initialState , {type , payload})=>{
@@ -38,6 +39,7 @@ const authReducer = (state = initialState , {type , payload})=>{
                     isLoading:false,
                     isAuth:true,
                     ...payload}
+       
         default:
             return state;
     }

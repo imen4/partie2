@@ -10,6 +10,7 @@ import Dashboard from './components/Dashboard';
 import PrivateRoute from './components/PrivateRoute';
 import { getAuthUser } from './JS/actions/authActions';
 import Home from './components/Home';
+import Command from './components/Command';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
         <Route path='/' element={<Home/>} />
         
           <Route path='/dashboard' element={<PrivateRoute><Dashboard /> </PrivateRoute>} />
-        
+          <Route path='/command' element={<PrivateRoute><Command /> </PrivateRoute>} />
+
       </Routes>
       <ToastContainer
 position="top-right"
